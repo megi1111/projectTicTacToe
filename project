@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static Scanner scanner = new Scanner(System.in);
     public static String[][] tt = new String[3][3];
-    public static String playerX = 'X';
-    public static String playerO = 'O';
+    public static String playerX = String.valueOf('X');
+    public static String playerO = String.valueOf('O');
 
 
     public static void emptyBoard() {
@@ -38,11 +38,11 @@ public class Main {
             System.out.println("player X's turn");
             System.out.println();
 
-            System.out.println("Enter the row: (1-3)");
+            System.out.println("Enter the row: (0-2)");
             int row = scanner.nextInt();
 
 
-            System.out.println("Enter the column: (1-3)");
+            System.out.println("Enter the column: (0-2)");
             int column = scanner.nextInt();
 
 
@@ -78,11 +78,11 @@ public class Main {
             System.out.println("player O's turn");
             System.out.println();
 
-            System.out.println("Enter the row: (1-3)");
+            System.out.println("Enter the row: (0-2)");
             int row = scanner.nextInt();
 
 
-            System.out.println("Enter the column: (1-3)");
+            System.out.println("Enter the column: (0-2)");
             int column = scanner.nextInt();
 
 
@@ -114,7 +114,7 @@ public class Main {
         }
     }
 
-    
+
     public static void main(String[] args) {
 
 
@@ -230,6 +230,8 @@ public class Main {
 
                             }
 
+
+
                             break;
 
 
@@ -237,7 +239,7 @@ public class Main {
                             System.out.println("invalid Character");
                             continue;
                         }
-
+                        }
 
                     }
 
@@ -247,3 +249,8 @@ public class Main {
 
             }
         }
+    }
+
+
+                 
+                  
