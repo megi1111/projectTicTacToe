@@ -16,7 +16,7 @@ class Main {
 
 		//Create a Scanner and ask the players for their names
 		Scanner in = new Scanner(System.in);
-		System.out.println("Let's play Tic Tac Toe! you can chose a number between 0-2");
+		System.out.println("Let's play Tic Tac Toe! ");
 		System.out.print("Player 1, what is your name? ");
 		String p1 = in.nextLine();
 		System.out.print("Player 2, what is your name? ");
